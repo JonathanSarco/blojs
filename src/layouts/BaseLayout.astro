@@ -30,13 +30,18 @@ const textCase = "uppercase";
       }
     </style>
   </head>
-  <body>
+
+  <body class="grid grid-cols-4 gap-4">
     <Header />
-    <h1>{pageTitle}</h1>
-    <slot />
-    <Footer />
-    <script>
+    <div class="col-span-3">
+      <h1>{pageTitle}</h1>
+
+      <slot />
+    </div>
+
+    <!-- <Footer /> -->
+    <!-- <script>
       import "../scripts/menu.js";
-    </script>
+    </script> -->
   </body>
 </html>
